@@ -62,10 +62,10 @@
 <smd name="1" x="1.2" y="-2.1" dx="0.7" dy="2.8" layer="1"/>
 <hole x="3.7" y="3.5" drill="1.4"/>
 <hole x="-3.7" y="3.5" drill="1.4"/>
-<wire x1="-3.825" y1="-0.575" x2="3.825" y2="-0.575" width="0.127" layer="21"/>
-<wire x1="3.825" y1="-0.575" x2="3.825" y2="7.575" width="0.127" layer="21"/>
-<wire x1="3.825" y1="7.575" x2="-3.825" y2="7.575" width="0.127" layer="21"/>
-<wire x1="-3.825" y1="7.575" x2="-3.825" y2="-0.575" width="0.127" layer="21"/>
+<wire x1="-3.825" y1="-0.575" x2="3.825" y2="-0.575" width="0.2032" layer="21"/>
+<wire x1="3.825" y1="-0.575" x2="3.825" y2="7.575" width="0.2032" layer="21"/>
+<wire x1="3.825" y1="7.575" x2="-3.825" y2="7.575" width="0.2032" layer="21"/>
+<wire x1="-3.825" y1="7.575" x2="-3.825" y2="-0.575" width="0.2032" layer="21"/>
 <rectangle x1="-1.4" y1="-3.435" x2="-1" y2="-0.75" layer="51"/>
 <rectangle x1="1" y1="-3.435" x2="1.4" y2="-0.75" layer="51"/>
 <text x="-0.11409375" y="5.4658" size="1.016" layer="25" font="vector" rot="R180" align="bottom-center">&gt;NAME</text>
@@ -476,6 +476,21 @@ USB</text>
 <rectangle x1="-7.874" y1="-0.254" x2="-7.366" y2="0.254" layer="51"/>
 <rectangle x1="7.366" y1="-0.254" x2="7.874" y2="0.254" layer="51"/>
 </package>
+<package name="MICRO-USB-POWER/M">
+<smd name="5" x="-1.2" y="-2.1" dx="1.3" dy="2.8" layer="1"/>
+<smd name="1" x="1.2" y="-2.1" dx="1.3" dy="2.8" layer="1"/>
+<hole x="3.7" y="3.5" drill="1.4"/>
+<hole x="-3.7" y="3.5" drill="1.4"/>
+<wire x1="-3.825" y1="-0.575" x2="3.825" y2="-0.575" width="0.2032" layer="21"/>
+<wire x1="3.825" y1="-0.575" x2="3.825" y2="7.575" width="0.2032" layer="21"/>
+<wire x1="3.825" y1="7.575" x2="-3.825" y2="7.575" width="0.2032" layer="21"/>
+<wire x1="-3.825" y1="7.575" x2="-3.825" y2="-0.575" width="0.2032" layer="21"/>
+<rectangle x1="-1.4" y1="-3.435" x2="-1" y2="-0.75" layer="51"/>
+<rectangle x1="1" y1="-3.435" x2="1.4" y2="-0.75" layer="51"/>
+<text x="-0.11409375" y="5.4658" size="1.016" layer="25" font="vector" rot="R180" align="bottom-center">&gt;NAME</text>
+<text x="0" y="0" size="1.016" layer="21" font="vector" align="bottom-center">micro
+USB</text>
+</package>
 </packages>
 <symbols>
 <symbol name="USB-POWER">
@@ -593,6 +608,15 @@ Micro USB, B type Female Solder type</description>
 </gates>
 <devices>
 <device name="" package="MICRO-USB-POWER">
+<connects>
+<connect gate="G$1" pin="GND" pad="5"/>
+<connect gate="G$1" pin="VCC" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="/M" package="MICRO-USB-POWER/M">
 <connects>
 <connect gate="G$1" pin="GND" pad="5"/>
 <connect gate="G$1" pin="VCC" pad="1"/>
