@@ -985,7 +985,9 @@ Official outline with cutouts for camera flex connector</description>
 <wire x1="8.0525" y1="49.96" x2="8.0525" y2="49.6425" width="0.127" layer="22"/>
 <wire x1="8.0525" y1="49.6425" x2="8.6875" y2="49.6425" width="0.127" layer="22"/>
 <wire x1="8.6875" y1="49.6425" x2="8.6875" y2="49.96" width="0.127" layer="22"/>
-<text x="8.6875" y="48.3725" size="1.016" layer="21" font="vector" ratio="10" rot="MR0">1</text>
+<text x="8.6875" y="48.3725" size="1.016" layer="22" font="vector" ratio="10" rot="MR0">1</text>
+<wire x1="8.6875" y1="49.96" x2="9.64" y2="49.96" width="0.127" layer="22"/>
+<text x="57.15" y="48.26" size="1.016" layer="22" font="vector" rot="MR0">Raspberry PI GPIO Port</text>
 </package>
 </packages>
 <symbols>
